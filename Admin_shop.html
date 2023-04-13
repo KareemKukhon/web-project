@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <link rel="stylesheet" href="AddEmployee.css">
+  <link rel="stylesheet" href="delivery2.css">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="script" href="employee.js">
+</head>
+<body>
+<div class="sidebar1" id="side">
+  <div class="sidebar-brand">
+    <h1><img src="img/logo1.png" alt=""> Manager</h1>
+  </div>
+  <div class="sidebar-menu">
+    <img src="img/logo1.png" alt="">
+    <ul>
+      <li><a href="admin_customer.html" id="emp" ><span class="las la-user-circle"></span>
+        <span>Customer</span></a>
+      </li>
+      <li><a href="Admin_delivery.html
+" id="order"><span  class="las la-truck"></span>
+        <span>Delivery</span></a>
+      </li>
+      <li><a href="Admin_shop.html" id="finance" class="active"><span class="las la-shopping-bag"></span>
+        <span>Shops</span></a>
+      </li>
+      <li>
+        <br>
+      </li>
+      <li><br></li>
+      <li><br></li>
+      <li><a href="test.php"><span class="las la-file-import"></span>
+        <span>Log out</span></a>
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="main-content">
+  <header>
+    <h1>
+      <label >
+        <span id="check" class="las la-bars"></span>
+      </label>
+      Shops
+    </h1>
+  </header>
+  <div class="add-shop">
+    <h2 style="cursor: pointer">
+      <div class="search-wrapper">
+        <span class="las la-search"></span>
+        <input type="search" placeholder="Search here" style="font-size: 20px;">
+      </div>
+      <div class="s1">
+        <input id="AddShop" type="button" value="| Add Shop " style="cursor: pointer">
+        <span class="las la-plus-circle"></span>
+      </div></h2>
+    <script>
+      document.getElementById("AddShop").addEventListener('click',
+              function (){
+                document.querySelector('.add-shop1').style.display = "flex";
+              });
+    </script>
+  </div>
+
+  <div class="shops">
+    <table>
+      <tr>
+        <td>
+          <div class="shop">
+            <img src="img/logo1.png" alt="">
+            <label><h2>shop Name</h2></label><br>
+            <input class="button1" type="button" value="Delete">
+          </div>
+        </td>
+        <td>
+          <div class="shop">
+            <img src="img/logo1.png" alt="">
+            <label><h2>shop Name</h2></label><br>
+            <input class="button1" type="button" value="Delete">
+          </div>
+        </td>
+        <td>
+          <div class="shop">
+            <img src="img/logo1.png" alt="">
+            <label><h2>shop Name</h2></label><br>
+            <input class="button1" type="button" value="Delete">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="shop">
+            <img src="img/logo1.png" alt="">
+            <label><h2>shop Name</h2></label><br>
+            <input class="button1" type="button" value="Delete">
+          </div>
+        </td>
+        <td>
+          <div class="shop">
+            <img src="img/logo1.png" alt="">
+            <label><h2>shop Name</h2></label><br>
+            <input class="button1" type="button" value="Delete">
+          </div>
+        </td>
+        <td>
+          <div class="shop">
+            <img src="img/logo1.png" alt="">
+            <label><h2>shop Name</h2></label><br>
+            <input class="button1" type="button" value="Delete">
+          </div>
+        </td>
+      </tr>
+
+    </table>
+    <script>
+      var button = document.getElementsByClassName("button1");
+      for (let i=0; i< button.length; i++){
+        button[i].addEventListener('click',
+                function (){
+                  document.querySelector('.warn').style.display = "flex";
+                });
+      }
+    </script>
+  </div>
+</div>
+
+<div class="add-shop1">
+  <div class="form">
+    <span id="back" class="las la-arrow-circle-left"></span>
+    <h2>ADD Shop</h2>
+    <script>
+      document.getElementById("back").addEventListener('click',
+              function (){
+                document.querySelector('.add-shop1').style.display = "none";
+              });
+    </script>
+    <div class="grid">
+      <div class="form-element">
+        <input type="file" id="file-1" accept="image/*">
+        <label for="file-1" id="file-1-preview">
+          <img src="https://bit.ly/3ubuq5o" alt="">
+          <div>
+            <span>+</span>
+          </div>
+        </label>
+      </div>
+      <div class="in-shop">
+        <div class="lp">
+          <lable>Shop Name : </lable>
+          <input type="text">
+        </div>
+        <div class="lp">
+          <lable>Shop Name : </lable>
+          <input type="text">
+        </div>
+
+        <div class="lp">
+          <lable>Shop Address : </lable>
+          <input type="text">
+        </div>
+
+        <div class="lp">
+          <input type="submit" value="ADD">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="warn">
+  <div class="del">
+    <h1>DELETE SHOP !</h1><br>
+    <p>Are you sure to delete the 'name of store 'store? </p><br>
+    <input type="submit" value="Yes" >
+    <input id="cancel" type="submit" value="Cancel">
+  </div>
+  <script>
+    document.getElementById("cancel").addEventListener('click',
+            function (){
+              document.querySelector('.warn').style.display = "none";
+            });
+  </script>
+</div>
+</body>
+</html>

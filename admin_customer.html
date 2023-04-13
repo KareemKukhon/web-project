@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="AddEmployee.css">
+    <link rel="stylesheet" href="delivery2.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="script" href="employee.js">
+</head>
+<body>
+<div class="sidebar1" id="side">
+    <div class="sidebar-brand">
+        <h1><img src="img/logo1.png" alt=""> Manager</h1>
+    </div>
+    <div class="sidebar-menu">
+        <img src="img/logo1.png" alt="">
+        <ul>
+            <li><a href="admin_customer.html" id="emp" class="active"><span class="las la-user-circle"></span>
+                <span>Customers</span></a>
+            </li>
+            <li><a href="Admin_delivery.html"  id="order" ><span class="las la-truck"></span>
+                <span>Delivery</span></a>
+            </li>
+            <li><a href="Admin_shop.html" id="finance" ><span class="las la-shopping-bag"></span>
+                <span>Shops</span></a>
+            </li>
+            <li>
+                <br>
+            </li>
+            <li><br></li>
+            <li><br></li>
+            <li><a href="test.php"3><span class="las la-file-import"></span>
+                <span>Log out</span></a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="main-content">
+    <header>
+        <h1>
+            <label >
+                <span id="check" class="las la-bars"></span>
+            </label>
+            Customers
+        </h1>
+    </header>
+    <div class="add-shop">
+        <h2 style="cursor: pointer">
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Search here" style="font-size: 20px;">
+            </div >
+            <div class="s1" ><input type="button" value="| search " >
+                <span class="las la-search"></span></div>
+
+        </h2>
+    </div>
+    <div class="list">
+        <table>
+            <tr><th>ID</th><th>Name</th><th>PhoneNumber</th><th>Address</th><th>Email</th></tr>
+            <tr><br></tr>
+            <tr>
+                <td>45</td> <td>Ahmad Khalil</td> <td>0597411327</td> <td>Nablus</td> <td>Kareemkukhon1@gmail.com</td><td><input type="button" value="Delete"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
